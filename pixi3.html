@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>pixi graphis sample</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/3.0.7/pixi.min.js"></script>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <style>
+    html {
+        background: url(ubuntu_logo_wood_cropped.png) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    </style>
+</head>
+
+<body>
+    <script type="text/javascript">
+    //var renderer = PIXI.autoDetectRenderer(800, 600, {
+    //    backgroundColor: 0x1099bb
+    var renderer = PIXI.autoDetectRenderer(1920, 1080, {
+        'transparent': true
+    });
+
+    document.body.appendChild(renderer.view);
+
+    // create the root of the scene graph
+    var stage = new PIXI.Container();
+
+    stage.interactive = true;
+
+    var graphics = new PIXI.Graphics();
+
+    // set a fill and line style
+    graphics.beginFill(0xFF3300);
+    graphics.lineStyle(4, 0xffd900, 1);
+
+    // draw a shape
+    graphics.moveTo(50, 50);
+    graphics.lineTo(250, 50);
+    graphics.lineTo(100, 100);
+    graphics.lineTo(50, 50);
+    graphics.endFill();
+
+    // set a fill and a line style again and draw a rectangle
+    graphics.lineStyle(2, 0x0000FF, 1);
+    graphics.beginFill(0xFF700B, 1);
+    graphics.drawRect(50, 250, 120, 120);
+
+    // draw a rounded rectangle
+    graphics.lineStyle(2, 0xFF00FF, 1);
+    graphics.beginFill(0xFF00BB, 0.25);
+    graphics.drawRoundedRect(150, 450, 300, 100, 15);
+    graphics.endFill();
+
+    // draw a circle, set the lineStyle to zero so the circle doesn't have an outline
+    graphics.lineStyle(0);
+    graphics.beginFill(0xFFFF0B, 0.5);
+    graphics.drawCircle(470, 90, 60);
+    graphics.endFill();
+
+
+    stage.addChild(graphics);
+
+    // run the render loop
+    animate();
+
+    function animate() {
+
+        renderer.render(stage);
+        requestAnimationFrame(animate);
+    }
+    </script>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+</body>
+
+</html>
