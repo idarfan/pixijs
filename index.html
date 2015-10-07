@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FairForm</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sizzle/2.2.0/sizzle.js"></script>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+<body>
+    <div id="sidebar">
+        <ul>
+            <li>
+                <a href="http://www.hinet.net">
+                    <div class="glyphicon glyphicon-user"></div>
+                    ホーム</a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="glyphicon glyphicon-send"></div>
+                    カタログ</a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="glyphicon glyphicon-question-sign"></div>Support</a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="glyphicon glyphicon-question-sign"></div>Support</a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="glyphicon glyphicon-question-sign"></div>Support</a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="glyphicon glyphicon-question-sign"></div>Support</a>
+            </li>
+        </ul>
+    </div>
+    <div class="container-fulid">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="./images/logo.png" width="50" height="50" alt="logo">
+                </a>
+                <!-- <a class="navbar-brand" href="#">Brand</a> -->
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">ホーム <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">会社情報</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">商品情報 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#section1">フェイスタオル & バスタオル & ハンドタオル</a></li>
+                            <li><a href="#section2">Try and Tweak Different Layouts</a></li>
+                            <li><a href="#section3">Mobile-first + Responsive</a></li>
+                            <li><a href="#section4">Leverage Snippets &amp; Examples</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- master head begin -->
+    <!-- col-xs-12 col-xs-offset-2 col-sm-12 col-sm-offset-2 col-md-12 col-md-offset-2 col-lg-12 col-lg-offset-2-->
+    <div class="container-fluid">
+        <header class="">
+            <div id="header-area">
+                <!--<div class="row"> -->
+                <div class="ha_header col-xs-12 col-lg-12">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 corporate-name pull-left">
+                        <a href="#" class="rollover">FAIR FORM INTERNATIONAL CO., LTD.</a>
+                    </div>
+                    <!-- 公司名稱 -->
+                    <div class="col-xs-4 col-xs-offset-2 col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2 col-lg-4 col-lg-offset-2 corporate-identity pull-left">
+                        <img src="./images/logo.png" width="72px" height="72px" alt="logo">
+                    </div>
+                    <!-- 公司識別形像-->
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 utility pull-right">
+                        <ul>
+                            <li class="first-child">
+                                <a href="#" class="rollover">よくあるご質問・お問合せ</a>
+                            </li>
+                            <li class="center pull-right">
+                                <a href="#" class="rollover">サイトマップ</a>
+                            </li>
+                            <li class="mypage">
+                                <a href="#" class="rollover pull-right">マイページ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- utility -->
+                    <div class="col-xs-4 col-sm-4 col-md4 col-lg-4 corporate-info pull-right">
+                        <ul>
+                            <li class="first-child">
+                                <a href="#" class="rollover pull-right">会社情報</a>
+                            </li>
+                            <li class="second-child">
+                                <a href="#" class="rollover pull-right">サッポログループ</a>
+                            </li>
+                        </ul>
+                        <!-- corporate-info -->
+                    </div>
+                </div>
+                <!--ha_header> -->
+                <!--</div> -->
+                <!-- row -->
+            </div>
+            <!--head area -->
+        </header>
+        <!--</div> -->
+    </div>
+    <!-- master head End -->
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#myCarousel').carousel({
+            interval: 10000
+        })
+
+        $('#myCarousel').on('slid.bs.carousel', function() {
+            //alert("slid");
+        });
+    });
+    </script>
+    <!-- Carousel Begin -->
+    <div class="container">
+        <div class="container col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="well well-light-green col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div id="myCarousel" class="carousel slide">
+                    <!-- Carousel items -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <a href="#" class="thumbnail"><img src="../images/catalogs/woolenblanket1.gif" alt="woolenblanket1" class="img-responsive"></a>
+                                </div>
+                                <div class="col-xs-3">
+                                    <a href="#" class="thumbnail"><img src="../images/catalogs/woolenblanket2.gif" alt="woolenblanket2" class="img-responsive"></a>
+                                </div>
+                                <div class="col-xs-3">
+                                    <a href="#" class="thumbnail"><img src="../images/catalogs/woolenblanket3.gif" alt="woolenblanket3" class="img-responsive"></a>
+                                </div>
+                                <div class="col-xs-3">
+                                    <a href="#" class="thumbnail"><img src="../images/catalogs/woolenblanket4.gif" alt="woolenblanket4" class="img-responsive"></a>
+                                </div>
+                            </div>
+                            <!--/row-->
+                        </div>
+                        <!--/item-->
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <a href="#x" class="thumbnail"><img src="../images/catalogs/Scissors1.gif" alt="Image" class="img-responsive">ohshit</a>
+                                </div>
+                                <div class="col-xs-3">
+                                    <a href="#x" class="thumbnail"><img src="../images/catalogs/Scissors2.gif" alt="Image" class="img-responsive"></a>
+                                </div>
+                                <div class="col-xs-3">
+                                    <a href="#x" class="thumbnail"><img src="../images/catalogs/Scissors3.gif" alt="Image" class="img-responsive"></a>
+                                </div>
+                                <div class="col-xs-3">
+                                    <a href="#x" class="thumbnail"><img src="../images/catalogs/spotscup1.gif" alt="Image" class="img-responsive"></a>
+                                </div>
+                            </div>
+                            <!--/row-->
+                        </div>
+                        <!--/item-->
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <a href="#x" class="thumbnail"><img src="../images/catalogs/spotscup2.gif" alt="Image" class="img-responsive"></a>
+                                </div>
+                                <div class="col-xs-3">
+                                    <a href="#x" class="thumbnail"><img src="../images/catalogs/spotscup3.gif" alt="Image" class="img-responsive"></a>
+                                </div>
+                                <div class="col-xs-3">
+                                    <a href="#x" class="thumbnail"><img src="../images/catalogs/spotscup4.gif" alt="Image" class="img-responsive"></a>
+                                </div>
+                                <div class="col-xs-3">
+                                    <a href="#x" class="thumbnail"><img src="../images/catalogs/spotscup5.gif" alt="Image" class="img-responsive"></a>
+                                </div>
+                            </div>
+                            <!--/row-->
+                        </div>
+                        <!--/item-->
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <a href="#x" class="thumbnail"><img src="../images/catalogs/lunchbox1.gif" alt="Image" class="img-responsive"></a>
+                                </div>
+                                <div class="col-xs-3">
+                                    <a href="#x" class="thumbnail"><img src="../images/catalogs/lunchbox2.gif" alt="Image" class="img-responsive"></a>
+                                </div>
+                                <div class="col-xs-3">
+                                    <a href="#x" class="thumbnail"><img src="../images/catalogs/lunchbox3.gif" alt="Image" class="img-responsive"></a>
+                                </div>
+                                <div class="col-xs-3">
+                                    <a href="#x" class="thumbnail"><img src="../images/catalogs/lunchbox4.gif" alt="Image" class="img-responsive"></a>
+                                </div>
+                            </div>
+                            <!--/row-->
+                        </div>
+                        <!--/item-->
+                    </div>
+                    <!--/carousel-inner-->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+                </div>
+                <!--/myCarousel-->
+            </div>
+            <!--/well-->
+        </div>
+    </div>
+    <!-- Carousel End -->
+    <!--section 1 ~ 4 Begin -->
+    <script>
+    //we'll use a window.onload for simplicity, but typically it is best to use either jQuery's $(document).ready() or $(window).load() or cross-browser event listeners so that you're not limited to one.
+    window.onload = function() {
+        //var logo = document.getElementById("logo");
+        //TweenMax.to(logo, 2, {left:"600px", repeat:-1, yoyo:true});           
+        TweenMax.to(document.getElementById("logo"), 9, {
+            bezier: [{
+                left: 400,
+                top: 250
+            }, {
+                left: 300,
+                top: 0
+            }, {
+                left: 500,
+                top: 300
+            }, {
+                left: 140,
+                top: 250
+            }, {
+                top: 0,
+                left: 120
+            }],
+            ease: Power1.easeInOut,
+            repeat: -1,
+            yoyo: true
+        });
+
+        TweenMax.to(document.getElementById("hehe"), 9, {
+            bezier: [{
+                left: 100,
+                top: 250
+            }, {
+                left: 300,
+                top: 0
+            }, {
+                left: 500,
+                top: 400
+            }, {
+                left: 100,
+                top: 250
+            }, {
+                top: 0,
+                left: 10
+            }],
+            ease: Power1.easeInOut,
+            repeat: -1,
+            yoyo: true
+        });
+        //bn_banner Begin
+        var $ = Sizzle,
+            $panel1 = $("#bn_panel1"),
+            $panel2 = $("#bn_panel2"),
+            $panel3 = $("#bn_panel3"),
+            $panel1Text = $("#bn_panel1 h1"),
+            $panel2Text = $("#bn_panel2 h2"),
+            $info = $("#info"),
+            /* $list = $("li"), */
+            $list = $("#bn_panel3 li"),
+            /* was li */
+            $orderNow = $("#orderNow"),
+            tl;
+
+        var tl = new TimelineMax({
+            delay: 0.5,
+            repeat: -1,
+            repeatDelay: 2
+                /* onUpdate: updateStats,
+                onRepeat: updateReps,
+                onComplete: restart */
+        });
+
+        //banner animation code (only 11 lines)
+
+        tl.from($panel1, 0.5, {
+                autoAlpha: 0
+            })
+            .from($panel1Text, 0.5, {
+                scale: 0.5,
+                autoAlpha: 0,
+                ease: Back.easeOut
+            })
+            .set($panel2, {
+                top: 0
+            }, "+=2")
+            .from($panel2, 0.2, {
+                autoAlpha: 0,
+                scale: 1.5
+            })
+            .from($panel2Text, 0.2, {
+                top: 250
+            }, "+=0.5")
+            .to($panel2Text, 0.2, {
+                top: 250
+            }, "+=2")
+            .set($panel3, {
+                top: 0
+            }, "final")
+            .from($info, 0.5, {
+                top: 250
+            }, "final")
+            .to($panel2, 0.5, {
+                top: -60
+            }, "final")
+            .staggerFrom($list, 0.3, {
+                autoAlpha: 0,
+                left: 50
+            }, 0.1, "+=0.2")
+            .from($orderNow, 0.5, {
+                scale: 0,
+                autoAlpha: 0,
+                ease: Back.easeOut
+            });
+        //bn_banner End   
+    }
+    </script>
+    <script type="text/javascript">    
+    function mouseEnterFunction() {
+
+        var $p1box = $('#p1box'),
+            $p1box2 = $('#p1box2'),
+            $p1box3 = $('#p1box3'),
+            $boxes = $('.p1box'),
+            tl = new TimelineLite({});
+
+        tl.staggerFrom($boxes, 1, {
+                y: '-=40',
+                autoAlpha: 0,
+                ease: Power4.easeInOut
+            }, 0.5)
+            .staggerTo($boxes, 1, {
+                x: -250,
+                autoAlpha: 0,
+                ease: Power4.easeInOut,
+                clearProps: 'x'
+            }, 0.5)
+            .staggerFromTo($boxes, 1, {
+                y: '+=40',
+                immediateRender: false
+            }, {
+                rotation: 30,
+                transformOrigin: 'top right',
+                autoAlpha: 1,
+                ease: Power4.easeInOut
+            }, 0.5);
+        //p1box end
+    }
+    </script>    
+    <div id="p1boxdemo" class="container" style="position:relative;" onmouseenter="mouseEnterFunction()">
+        <div class="divider"></div>
+        <section class="bg-1" id="section1">
+            <div class="row">
+                <div class="page-header text-center">
+                    <h1>フェイスタオル & バスタオル & ハンドタオル</h1>
+                </div>
+                <div id="p1box" class="p1box">
+                    <img src="../images/catalogs/woolenblanket1.gif" width="200" height="200" alt="★">
+                </div>
+                <div id="p1box2" class="p1box">
+                    <img src="../images/catalogs/woolenblanket2.gif" width="200" height="200" alt="★">
+                </div>
+                <div id="p1box3" class="p1box">
+                    <img src="../images/catalogs/woolenblanket3.gif" width="200" height="200" alt="★">
+                </div>
+                <div id="p1box4" class="p1box">
+                    <img src="../images/catalogs/woolenblanket4.gif" width="200" height="200" alt="★">
+                </div>
+                <div id="logo">
+                    <img src="../images/logo.png" width="55" height="55" alt="★">
+                </div>
+            </div>
+            <div class="col-xs-6 col-xs-offset-6">
+                <a href="http://www.tucows.com">
+                    <button type="button" class="btn btn-primary btn_right_bottom">products</button>
+                </a>
+            </div>
+        </section>
+        <div class="well well-sm-main">第一款商品</div>
+        <div class="divider"></div>
+        <section class="bg-1" id="section2">
+            <div class="row">
+                <div id="hehe" class="col-sm-6 col-sm-offset-0 text-left">
+                    <h2 style="padding:20px;background-color:rgba(5,5,5,.8)">col-sm-offset-0</h2></div>
+                <div class="col-sm-6 col-sm-offset-1 text-right">
+                    <h2 style="padding:20px;background-color:rgba(5,5,5,.8)">col-sm-offset-1</h2></div>
+            </div>
+        </section>
+        <div class="well well-sm">第二款商品</div>
+        <div class="divider"></div>
+        <section class="" id="section3">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2 text-center">
+                    <h1>Mobile-first + Responsive</h1>
+                    <p>
+                        Instead of creating a unique version of the webpage for each desktop, mobile &amp; tablet, you can now create one design that works on all devices, browsers &amp; resolutions. Your designs will be future ready when a new table or phone size comes in the market, your designs will adapt itself and fit to the new screen size.
+                    </p>
+                    <hr>
+                    <img src="/assets/example/bg_smartphones.jpg" class="img-responsive">
+                    <hr>
+                </div>
+                <!--/col-->
+            </div>
+            <!--/container-->
+        </section>
+        <div class="well well-sm">第三款商品</div>
+        <div class="divider"></div>
+        <section class="bg-3" id="section4">
+            <div class="col-sm-6 col-sm-offset-3 text-center">
+                <h2 style="padding:20px;background-color:rgba(5,5,5,.8)">Leverage Snippets &amp; Examples</h2>
+            </div>
+        </section>
+        <div class="well well-sm">第四款商品</div>
+        <!--Section 1 ~ 4 end -->
+    </div>
+    <div class="container">
+        <!-- panel Begin -->
+        <div class="continer bg-4">
+            <div class="row">
+                <div class="col-sm-4 col-xs-6">
+                    <div class="panel panel-default">
+                        <div><img src="//placehold.it/620X250/565656/eee" class="img-responsive"></div>
+                        <div class="panel-body">
+                            <p class="lead">Hacker News</p>
+                            <p>120k Followers, 900 Posts</p>
+                            <p>
+                                <img src="https://lh4.googleusercontent.com/-9Yw2jNffJlE/AAAAAAAAAAI/AAAAAAAAAAA/u3WcFXvK-g8/s28-c-k-no/photo.jpg" width="28px" height="28px">
+                            </p>
+                        </div>
+                    </div>
+                    <!--/panel-->
+                </div>
+                <!--/col-->
+                <div class="col-sm-4 col-xs-6">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail"><img src="//placehold.it/620X250/ffcc33/444" class="img-responsive"></div>
+                        <div class="panel-body">
+                            <p class="lead">Bootstrap Templates</p>
+                            <p>902 Followers, 88 Posts</p>
+                            <p>
+                                <img src="https://lh5.googleusercontent.com/-AQznZjgfM3E/AAAAAAAAAAI/AAAAAAAAABA/WEPOnkQS_20/s28-c-k-no/photo.jpg" width="28px" height="28px">
+                            </p>
+                        </div>
+                    </div>
+                    <!--/panel-->
+                </div>
+                <!--/col-->
+                <div class="col-sm-4 col-xs-6">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail"><img src="//placehold.it/620X250/f16251/444" class="img-responsive"></div>
+                        <div class="panel-body">
+                            <p class="lead">Social Media</p>
+                            <p>19k Followers, 789 Posts</p>
+                            <p>
+                                <img src="https://lh4.googleusercontent.com/-eSs1F2O7N1A/AAAAAAAAAAI/AAAAAAAAAAA/caHwQFv2RqI/s28-c-k-no/photo.jpg" width="28px" height="28px">
+                                <img src="https://lh4.googleusercontent.com/-9Yw2jNffJlE/AAAAAAAAAAI/AAAAAAAAAAA/u3WcFXvK-g8/s28-c-k-no/photo.jpg" width="28px" height="28px">
+                            </p>
+                        </div>
+                    </div>
+                    <!--/panel-->
+                </div>
+                <!--/col add one more for test -->
+                <!-- bn_banner Begin -->
+                <div class="col-sm-4 col-xs-6">
+                    <div id="bn_banner">
+                        <div class="bn_panel" id="bn_panel1">
+                            <h1>hungry?</h1>
+                        </div>
+                        <div class="bn_panel" id="bn_panel2">
+                            <h2>How about now?</h2>
+                        </div>
+                        <div class="bn_panel" id="bn_panel3">
+                            <div id="info">
+                                <h1>Burger Boy</h1>
+                                <ul>
+                                    <li>Free delivery in NYC</li>
+                                    <li>Open 24hrs</li>
+                                </ul>
+                                <div id="orderNow">order now</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/panel-->
+            </div>
+        </div>
+        <!--/row-->
+    </div>
+    <!--/container-->
+    <!-- panel End -->
+    </div>
+    <!--使用modal 做連絡我們的選單-->
+    <div class="container">
+        <h2>連絡我們</h2>
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">連絡我們</button>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">慧紅國際有限公司</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>ユーザーの皆様に感動をもたらし、人々の好奇心を刺激する会社であり続ける。 これが私たちソニーのミッションです。 テクノロジー、コンテンツ、そしてサービスへの飽くなき情熱で、 世界に先駆けた商品や体験、そして新しい文化を生みだし ソニーだからできる、新たな感動の開拓者となることをめざします。 すべては、あなたの心を動かすために。 BE MOVED?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="divider" id="section5"></div>
+    <div class="well well-sm">Small Well</div>
+    <div class="row">
+        <hr>
+        <div class="col-sm-8">
+        </div>
+        <div class="col-sm-4 pull-right">
+            <address>
+                <strong>FAIRFORM INTERNATIONAL CO., LTD.</strong>
+                <br> 11F NO 117 SEC 2
+                <br> CHUNG CHING N RD.,
+                <br> TAIPEI, TAIWAN, R.O.C
+                <br> TEL: 886-2-25530861
+            </address>
+            <address>
+                <strong>Email Us</strong>
+                <br>
+                <a href="mailto:mr.idarfan@gmail.com">mr.idarfan@gmail.com</a>
+            </address>
+        </div>
+    </div>
+    <div id="footer">
+        <ul class="nav pull-right scroll-top">
+            <li><a href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

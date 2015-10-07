@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/3.0.7/pixi.min.js"></script>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <style>
+    html {
+        background: url(ubuntu_logo_wood_cropped.png) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    </style>
+</head>
+
+<body>
+    <script type="text/javascript">
+    //var renderer = PIXI.autoDetectRenderer(800, 600, {
+    //    backgroundColor: 0x1099bb
+    var renderer = PIXI.autoDetectRenderer(1920, 1080, {
+        'transparent': true
+    });
+
+    document.body.appendChild(renderer.view);
+    // create the root of the scene graph
+    var stage = new PIXI.Container();
+
+    var container = new PIXI.Container();
+    //場景中放入變數名為 container 的Container
+    stage.addChild(container);
+
+    for (var j = 0; j < 25; j++) {
+
+        for (var i = 0; i < 25; i++) {
+            var bunny = PIXI.Sprite.fromImage('bunny.png');
+            bunny.x = 60 * i;
+            bunny.y = 60 * j;                     
+            container.addChild(bunny);
+            //將bunny 放入變數名為container 的Container        
+        };
+    };
+    /*
+     * All the bunnies are added to the container with the addChild method
+     * when you do this, all the bunnies become children of the container, and when a container moves,
+     * so do all its children.
+     * This gives you a lot of flexibility and makes it easier to position elements on the screen
+     */
+    container.x = 100;
+    container.y = 60;
+
+    // start animating  
+    animate();
+
+    function animate() {
+
+        requestAnimationFrame(animate);        
+        // render the root container         
+        renderer.render(stage);
+    }
+    </script>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+</body>
+
+</html>

@@ -1,0 +1,749 @@
+/* 預載字型 ? */
+
+@import url(http://fonts.googleapis.com/css?family=Kreon:400,700);
+html,
+body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+    -webkit-font-smoothing: antialiased;
+    font: normal 14px arial, sans-serif;
+    background: #f0ebdf;
+    font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'Meiryo UI', 'MS UI Gothic', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+}
+
+/* fucking media begin */
+@media (min-width:640px) {
+    .container {
+        width: 640px
+    }
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 750px
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 970px
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+       width: 1170px    
+    }
+}
+
+@media (min-width:1920px) {
+    .container {
+       width: 1920px    
+    }    
+}
+/* fucking media end */
+/* part of nav begin */
+.navbar-default {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    border-radius: 6px;                           
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05)
+}
+
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 0px 15px 15px 15px;
+    font-size: 18px;
+    line-height: 20px
+}
+
+.navbar-default .navbar-brand {
+    color: #777
+}
+
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+    color: #5e5e5e;
+    background-color: transparent
+}
+
+.navbar-default .navbar-text {
+    color: #777
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #777
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: #333;
+    background-color: transparent
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #555;
+    background-color: #e7e7e7;
+    font-weight: 900
+}
+
+.navbar-default .navbar-nav>.disabled>a,
+.navbar-default .navbar-nav>.disabled>a:focus,
+.navbar-default .navbar-nav>.disabled>a:hover {
+    color: #ccc;
+    background-color: transparent
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #ddd
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: #ddd
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #888
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: #e7e7e7
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+    color: #555;
+    background-color: #e7e7e7
+}
+
+/* part of nav end */
+/* part of well begin */
+.well {
+    min-height: 20px;
+    padding: 19px;        
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05)
+}
+
+.well-light-green {
+background: #A8D8B9;
+}
+
+.well blockquote {
+    border-color: #ddd;
+    border-color: rgba(0, 0, 0, .15)
+}
+
+.well-lg {
+    padding: 24px;
+    border-radius: 6px
+}
+
+.well-sm {
+    padding: 9px;
+    border-radius: 3px
+}
+
+.well-sm-main
+{
+    padding: 9px;
+    border-radius: 3px;
+    background-color: #F4A7B9;
+    border: 1px solid #FFB11B;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05)
+}
+/* part of well end  */
+/* Sidebar Begin */
+
+#sidebar {
+    position: fixed;
+    left: 0;
+    top: 30%;
+    height: 340px;
+    width: 66px;
+    z-index: 9999;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: 2px solid #285e8e;
+    border-right: 2px solid #285e8e;
+    border-bottom: 2px solid #285e8e;
+    background: -webkit-linear-gradient(right, #428bca, #285e8e);
+    background: -moz-linear-gradient(right, #428bca, #285e8e);
+    background: -ms-linear-gradient(right, #428bca, #285e8e);
+    background: -o-linear-gradient(right, #428bca, #285e8e);
+    -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    /* FUCK IE */
+    filter: progid: DXImageTransform.Microsoft.Shadow(color=#010101, direction=180, strength=4), progid: DXImageTransform.Microsoft.Shadow(color=#010101, direction=225, strength=4), progid: DXImageTransform.Microsoft.Shadow(color=#010101, direction=270, strength=5);
+}
+
+#sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar li a {
+    display: block;
+    padding: 4px;
+    margin: 0 0px 5px 0px;
+    font-size: 7px;
+    text-align: center;
+}
+
+#sidebar li a:link,
+#sidebar li a:visited,
+#sidebar li a:active {
+    color: #d7d7d7;
+    text-decoration: none;
+}
+
+#sidebar li a:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#sidebar .glyphicon {
+    font-size: 20px;
+}
+
+@media (max-width: 991px) {
+    #sidebar {
+        top: auto;
+        left: auto;
+        bottom: 5%;
+        right: 0;
+        width: 45px;
+        height: 320px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top: 2px solid #285e8e;
+        border-right: none;
+        border-left: none;
+        border-bottom: 2px solid #285e8e;
+        -webkit-box-shadow: -3px -3px 5px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: -3px -3px 5px rgba(0, 0, 0, 0.4);
+        box-shadow: -3px -3px 5px rgba(0, 0, 0, 0.4);
+        /* FU IE */
+        filter: progid: DXImageTransform.Microsoft.Shadow(color=#010101, direction=180, strength=4), progid: DXImageTransform.Microsoft.Shadow(color=#010101, direction=225, strength=4), progid: DXImageTransform.Microsoft.Shadow(color=#010101, direction=270, strength=5);
+    }
+    #sidebar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    #sidebar li a {
+        display: block;
+        padding: 2px;
+        margin: 0;
+        font-size: 7px;
+        text-align: center;
+    }
+    #sidebar .glyphicon {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 767px) {
+    #sidebar {
+        display: none;
+    }
+}
+
+
+/* Sidebar End */
+
+
+/* 將head 高度調為100px */
+
+header {
+    background-color: #FEDFE1;
+    width: 100%;
+    height: 140px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+header h1,
+header h2,
+header h3 a,
+header a,
+header a:hover {
+    font-weight: 900;
+    text-decoration: none;
+}
+
+#logo {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+#hehe {
+    position: relative;
+    z-index: -1
+}
+
+
+/* gasp test */
+
+
+/* Section Begin */
+
+.divider {   
+    height: 10px;
+}
+
+section {      
+    color: #ffffff;
+    width: 100%;  
+    min-height: 440px;
+    height: auto !important;
+    height: 100%;          
+}
+
+.bg-1 {
+    background: url("../images/westminster-london.jpg") no-repeat center center;        
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.bg-2 {
+    background: url('http://www.bootply.com/assets/example/bg_5.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.bg-3 {
+    background: url('http://www.bootply.com/assets/example/bg_6.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.bg-4 {
+    padding-top: 30px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 20, 20, 0.2)), to(rgba(255, 255, 255, 0)), color-stop(1, #000));
+}
+
+
+/* 以上是section End */
+
+
+/* header-area navigation-area and footer-area and related-area common css setting begin */
+
+
+/* color: #806a00 */
+
+#header-area a:link,
+#navigation-area a:link,
+#footer-area a:link,
+#related-area a:link {
+    color: #806a00;
+    font-size: 12px;
+}
+
+#header-area a:visited,
+#navigation-area a:visited,
+#footer-area a:visited,
+#related-area a:visited {
+    color: #80774c
+}
+
+#header-area a:focus,
+#navigation-area a:focus,
+#footer-area a:focus,
+#related-area a:focus {
+    color: #e6bf00
+}
+
+#header-area a:link:hover,
+#header-area a:visited:hover,
+#header-area a:link:active,
+#header-area a:visited:active,
+#navigation-area a:link:hover,
+#navigation-area a:visited:hover,
+#navigation-area a:link:active,
+#navigation-area a:visited:active,
+#footer-area a:link:hover,
+#footer-area a:visited:hover,
+#footer-area a:link:active,
+#footer-area a:visited:active,
+#related-area a:link:hover,
+#related-area a:visited:hover,
+#related-area a:link:active,
+#related-area a:visited:active {
+    color: #e6bf00
+}
+
+#related-area a:hover img,
+#related-area a:focus img,
+#related-area a.rollover:hover img.norollover,
+#related-area a.rollover:focus img.norollover {
+    -ms-filter: "alpha(opacity=70)";
+    filter: Alpha(opacity=70);
+    opacity: .7;
+    zoom: 1
+}
+
+#related-area a.rollover:focus span img,
+#related-area a:hover span.attention img,
+#related-area a:focus span.attention img,
+#related-area a.with-icon:hover img,
+#related-area a.with-icon:focus img,
+#related-area a.rollover:hover img,
+#related-area a.rollover:focus img,
+#related-area a.rollover-button:hover img,
+#related-area a.rollover-button:focus img,
+#related-area a.rollover:hover span img,
+#related-area a.rollover:focus span img,
+#related-area .tabView-tabs a:hover img,
+#related-area .tabView-tabs a:focus img {
+    -ms-filter: none;
+    filter: none;
+    opacity: 1;
+    zoom: default
+}
+
+
+/* header-area navigation-area and footer-area and related-area common css setting End */
+
+
+/* 企業名稱及企業識別形象Begin */
+
+#header-area .ha_header {
+    width: 100%;
+    padding: 0 auto;
+    text-align: left;
+    position: relative
+}
+
+.corporate-name {
+    margin-top: 36px;
+    float: left;
+}
+
+.corporate-identity {
+    margin-top: 36px;
+    float: left;
+    /* padding: auto; */
+    /*padding: 1px 0 6px 497px; */
+}
+
+
+/* 企業名稱及企業識別形象End */
+
+
+/* utiltiy begin */
+
+#header-area .ha_header .utility {
+    margin-top: -56px;
+    padding: 9px 5px 0 0;
+    height: 24px
+}
+
+#header-area .ha_header .utility ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none
+}
+
+#header-area .ha_header .utility ul:before,
+#header-area .ha_header .utility ul:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden
+}
+
+#header-area .ha_header .utility ul li {
+    float: right;
+    margin: 5px 0 10px 10px;
+    padding: 0 0 2px 10px;
+    border-left: 2px solid #e2dbbf;
+    font-size: 1px;
+    line-height: 10px
+}
+
+#header-area .ha_header .utility ul li.first-child,
+#header-area .ha_header .utility ul li.mypage,
+#header-area .ha_header .utility ul li.center {
+    margin-left: 15px;
+    padding-left: 0;
+    /* border-left: 0 none */
+}
+
+#header-area .ha_header .utility ul li.mypage {
+    margin-left: 15px;
+    padding-left: 0;
+    border-left: 0 none;
+}
+
+#header-area .ha_header .utility ul li a,
+#header-area .ha_header .utility ul li img {
+    display: block;
+    vertical-align: top;
+    margin-left: 15px;
+}
+
+
+/* utiltiy end */
+
+
+/* corporate-info begin */
+
+#header-area .ha_header .corporate-info {
+    clear: both;
+    float: right;
+    margin-top: 10px;
+    padding: 0 0 2px 10px;
+}
+
+#header-area .ha_header .corporate-info ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style-type: none
+}
+
+#header-area .ha_header .corporate-info ul li {
+    float: right;
+    margin: 5px 0px 10px 10px;
+    padding: 0 0 2px 10px;
+    border-left: 2px solid #e2dbbf;
+    font-size: 1px;
+    line-height: 10px;
+    zoom: 1
+}
+
+#header-area .ha_header .corporate-info ul li.first-child {
+    margin-left: 15px;
+}
+
+#header-area .ha_header .corporate-info ul li.second-child {
+    margin-left: 15px;
+    border-left: 0 none;
+}
+
+#header-area .ha_header .corporate-info ul li a,
+#header-area .ha_header .corporate-info ul li img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+
+
+/* corporate-info end */
+
+
+/* Carousel Begin */
+
+.carousel {
+    position: relative;    
+    width: 100%;
+    background: #A8D8B9;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;    
+}
+
+.carousel-control {
+    padding-top: 10%;
+    width: 5%;
+}
+
+.scroll-top {
+    position: fixed;
+    bottom: 0;
+    right: 6%;
+    z-index: 100;
+    background: #ffcc33;
+    font-size: 24px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+
+/* Carousel End */
+
+
+/* Panel Begin */
+
+#bn_banner {
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    width: 100%;
+    height: 250px;
+    background: white;
+    overflow: hidden;
+    float: left;
+}
+
+.bn_panel {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+#bn_panel1 {
+    background: #a02600;
+}
+
+#bn_panel2 {
+    top: 260px;
+    background: url(//greensock.com/forums-support-files/burgerboy/burger.jpg);
+}
+
+#bn_panel1 h1 {
+    position: relative;
+    font-size: 40px;
+    line-height: 240px;
+    text-align: center;
+    width: inherit;
+}
+
+#bn_panel2 h2 {
+    margin: 0;
+    position: absolute;
+    top: 188px;
+    width: inherit;
+    ;
+    font-size: 22px;
+    text-align: center;
+    padding: 20px;
+    background: #a02600;
+}
+
+#bn_panel3 {
+    top: 520px;
+}
+
+#bn_panel3 #info {
+    position: absolute;
+    top: 125px;
+    width: inherit;
+    padding: 10px;
+    height: 125px;
+    background: #a02600;
+}
+
+#bn_panel3 h1 {
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#bn_panel3 li {
+    position: relative;
+    margin-top: 10px;
+    color: #ffa488;
+}
+
+#bn_panel3 #orderNow {
+    position: absolute;
+    top: 60px;
+    left: 440px;
+    background: #ffc600;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    border: 4px solid transparent;
+}
+
+#bn_panel3 #orderNow:hover {
+    background: #ffaa00;
+    border: 4px solid #fff;
+    cursor: pointer;
+}
+
+
+/* Panel End */
+
+
+/* 設定下拉式選單的顏色及邊框*/
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    background-image: none !important;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    background-color: hsla(120, 100%, 75%, 0.3);
+    border: 1px solid #FFDAB6;
+    border-radius: 4px
+}
+
+
+/* 設定按鍵的顏色及邊框*/
+
+.btn-default:active,
+.btn-default:focus,
+.btn-default:active,
+.btn-default:focus,
+.btn-default:hover,
+.open > .dropdown-toggle.btn-default {
+    color: #333;
+    background-color: hsla(120, 100%, 75%, 0.3);
+    border-color: #FFDAB6
+}
+
+.btn_right_bottom
+{
+    position: relative;
+    float: right;
+    margin-top: 100px;
+    margin-right: 0px;    
+}
+
+.p1box {
+  background-color: #88ce02;
+  position: absolute;  
+  width: 200px;
+  height: 200px;
+  transform: translate(100px, 50px);
+  z-index: 1;
+}
+
+#p1box2 {
+  transform: translate(350px, 50px);
+}
+
+#p1box3 {
+  transform: translate(600px, 50px);
+}
+
+#p1box4 {
+  transform: translate(850px, 50px);
+}

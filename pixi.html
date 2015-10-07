@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/3.0.7/pixi.min.js"></script>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <style>
+    html {
+        background: url(ubuntu_logo_wood_cropped.png) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    </style>
+</head>
+
+<body>
+    <script type="text/javascript">
+    //var renderer = PIXI.autoDetectRenderer(800, 600, {
+    //    backgroundColor: 0x1099bb
+    var renderer = PIXI.autoDetectRenderer(1920, 1080, {
+        'transparent': true
+    });
+
+    document.body.appendChild(renderer.view);
+
+    // create the root of the scene graph
+    var stage = new PIXI.Container();
+
+    // create a texture from an image path
+    var texture = PIXI.Texture.fromImage('bunny.png');
+
+    // create a new Sprite using the texture
+    var bunny = new PIXI.Sprite(texture);
+
+    // center the sprite's anchor point
+    bunny.anchor.x = 0.5;
+    bunny.anchor.y = 0.5;
+
+    // move the sprite to the center of the screen
+    bunny.position.x = 960;
+    bunny.position.y = 540;
+
+    stage.addChild(bunny);
+
+    // start animating
+    animate();
+
+    function animate() {
+        requestAnimationFrame(animate);
+
+        // just for fun, let's rotate mr rabbit a little
+        bunny.rotation += 0.1;
+
+        // render the container
+        renderer.render(stage);
+    }
+    </script>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+</body>
+
+</html>
